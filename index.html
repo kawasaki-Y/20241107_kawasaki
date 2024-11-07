@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>財務分析ツール</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>財務分析ツール</h1>
+  </header>
+  <main>
+    <section id="inputSection">
+      <h2>財務データ入力</h2>
+      <form id="financialForm">
+        <label for="revenue">収益: </label>
+        <input type="number" id="revenue" required><br>
+        <label for="expenses">費用: </label>
+        <input type="number" id="expenses" required><br>
+        <label for="assets">資産: </label>
+        <input type="number" id="assets" required><br>
+        <label for="liabilities">負債: </label>
+        <input type="number" id="liabilities" required><br>
+        <button type="button" id="analyzeBtn">分析とグラフ表示</button>
+      </form>
+    </section>
+    <section id="chartContainer">
+      <canvas id="analysisChart" width="600" height="400"></canvas>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
